@@ -1,14 +1,16 @@
 server:
   port: 8081
 
-kafka:
-  topic:
-    user-notifications: user.notifications
-
 spring:
-  kafka:
-    bootstrap-servers: localhost:9092
+  datasource:
+    url: jdbc:postgresql://postgres:5432/userdb
+    username: user
+    password: password
 
-logging:
-  level:
-    org.hiber: INFO
+  kafka:
+    bootstrap-servers: kafka:9092
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka
