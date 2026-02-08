@@ -37,6 +37,11 @@
 
   <dependencies>
 
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
     <!-- Source: https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
